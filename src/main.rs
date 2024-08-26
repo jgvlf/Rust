@@ -1,6 +1,5 @@
-mod guessing_game;
-mod three;
+mod modules;
 
 fn main() {
-    guessing_game::main::guessing_game_run()
+    modules::guessing_game::main::guessing_game_run()
 }
