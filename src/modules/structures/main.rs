@@ -9,6 +9,8 @@ struct User {
 struct Color(u8, u8, u8);
 struct Point(i32, i32, i32);
 
+struct AlwaysEqual;
+
 fn build_user(email: String, username: String) -> User {
     User {
         active: true,
@@ -47,4 +49,8 @@ pub fn tuple_struct_instances() {
     let origin: Point = Point(0, 0, 0);
     println!("{}", black.0);
     println!("{}", origin.0);
+}
+
+pub fn unit_like_struct() {
+    let subject: AlwaysEqual = AlwaysEqual;
 }
