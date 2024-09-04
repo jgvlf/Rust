@@ -9,7 +9,7 @@ fn first_word(s: &String) -> &str {
 
     &s[..]
 }
-
+#[allow(dead_code)]
 pub fn get_first_word() {
     let s: String = String::from("Hello world");
     let word: &str = first_word(&s);
