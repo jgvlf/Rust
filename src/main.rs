@@ -20,4 +20,5 @@ fn main() {
     // modules::ownership::dangling::sim_dangling();
     // modules::slice::main::get_first_word();
     modules::structures::main::create_user();
+    modules::structures::main::tuple_struct_instances();
 }

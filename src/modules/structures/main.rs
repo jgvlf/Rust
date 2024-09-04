@@ -44,5 +44,7 @@ pub fn create_user() {
 
 pub fn tuple_struct_instances() {
     let black: Color = Color(0, 0, 0);
-    let origin: Point = (0, 0, 0);
+    let origin: Point = Point(0, 0, 0);
+    println!("{}", black.0);
+    println!("{}", origin.0);
 }
