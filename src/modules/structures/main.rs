@@ -50,7 +50,8 @@ pub fn tuple_struct_instances() {
     println!("{}", black.0);
     println!("{}", origin.0);
 }
-
+#[allow(dead_code)]
+#[allow(unused_variables)]
 pub fn unit_like_struct() {
     let subject: AlwaysEqual = AlwaysEqual;
 }
