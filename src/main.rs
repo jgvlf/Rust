@@ -17,5 +17,6 @@ fn main() {
     // modules::branches::main::for_in_collection();
     // modules::branches::main::for_in_rev_range();
     // modules::ownership::main::test_ownership();
-    modules::ownership::dangling::sim_dangling();
+    // modules::ownership::dangling::sim_dangling();
+    modules::slice::main::get_first_word();
 }
