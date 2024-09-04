@@ -14,13 +14,19 @@ fn build_user(email: String, username: String) -> User {
         sign_in_count: 1,
     }
 }
-
+#[allow(unused_variables)]
 pub fn create_user() {
     let mut user: User = User {
         active: true,
         username: String::from("someusername123"),
         email: String::from("someone@example.com"),
         sign_in_count: 1,
+    };
+    let user2: User = User {
+        active: user.active,
+        username: user.username,
+        email: String::from("another@example.com"),
+        sign_in_count: user.sign_in_count,
     };
     println!("{}", user.email);
     user.email = String::from("anotheremail@example.com");
