@@ -6,6 +6,9 @@ struct User {
     sign_in_count: u64,
 }
 
+struct Color(u8, u8, u8);
+struct Point(i32, i32, i32);
+
 fn build_user(email: String, username: String) -> User {
     User {
         active: true,
@@ -37,4 +40,9 @@ pub fn create_user() {
     println!("{}", adm.email);
     adm.email = String::from("Joao.Fernandes7@br.bosch.com");
     println!("{}", adm.email);
+}
+
+pub fn tuple_struct_instances() {
+    let black: Color = Color(0, 0, 0);
+    let origin: Point = (0, 0, 0);
 }
