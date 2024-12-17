@@ -65,6 +65,7 @@ fn main() {
     println!("{:?}", v);
 
     // create a enum to use as type in a vector to use diferent data types
+    #[derive(Debug)]
     enum SpreadsheetCell {
         Int(i32),
         Float(f64),
@@ -76,4 +77,6 @@ fn main() {
         SpreadsheetCell::Text(String::from("blue")),
         SpreadsheetCell::Float(10.12),
     ];
+
+    println!("{:?}", row)
 }
