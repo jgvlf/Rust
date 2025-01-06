@@ -1,6 +1,7 @@
 use std::fs::File;
 use std::io::ErrorKind;
 
+#[allow(unused_variables)]
 pub fn open_file() {
     let greeting_file_result: File = File::open("hello.txt").unwrap_or_else(|error| {
         if error.kind() == ErrorKind::NotFound {
