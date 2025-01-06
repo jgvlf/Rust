@@ -1,3 +1,8 @@
+pub mod cpanic;
+pub mod recoverable;
+
+use cpanic::ccall;
+
 fn main() {
-    println!("Hello, world!");
+    ccall::run_panic();
 }
