@@ -19,9 +19,6 @@ fn main() {
     // cresult::open_file();
     // shortcuts::clean_open_file();
     // shortcuts::expect_open_file();
-    let user: Result<String, std::io::Error> = username::read_username_from_file();
-    match user {
-        Ok(username) => println!("Username: {username}"),
-        Err(e) => println!("Error: {e:?}"),
-    }
+    let user: String = username::read_username_from_file().unwrap();
+    println!("Username: {user:?}");
 }
