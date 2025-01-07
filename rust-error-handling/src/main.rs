@@ -21,4 +21,6 @@ fn main() {
     // shortcuts::expect_open_file();
     let user: String = username::read_username_from_file().unwrap();
     println!("Username: {user:?}");
+    let user_last_char: char = username::get_last_char_of_username(&user);
+    println!("Last Username Char: {user_last_char:?}");
 }
